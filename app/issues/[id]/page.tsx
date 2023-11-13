@@ -24,7 +24,7 @@ export default async function IssueDetailsPage({ params }: Props) {
         <IssueStatusBadge status={issue.status} />
         <Text>{issue.createdAt.toDateString()}</Text>
       </Flex>
-      <Card className="prose">
+      <Card className="prose" mt="3">
         <ReactMarkdown>{issue.description}</ReactMarkdown>
       </Card>
     </div>
